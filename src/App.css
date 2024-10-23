@@ -1,0 +1,125 @@
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  html {
+      font-size: 14px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  html {
+      font-size: 12px; 
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+      font-size: 16px;
+  }
+
+}
+
+@media (max-width: 540px) {
+  .contact-form {
+    width: 100% !important;
+  }
+  .contact-form-container {
+    box-shadow: none !important;
+  }
+}
+
+
+.list-item-link {
+  color: black !important;
+  width:fit-content;
+  margin: auto;
+  position: relative;
+  text-decoration: none;
+}
+
+.list-item-link.active {
+  font-weight: 600 !important;
+  color: rgb(25 118 175) !important;
+}
+
+.list-item-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 18px;
+    background-color: rgb(26, 25, 25);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  
+.list-item-link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+
+.contact-form {
+  width: 25rem;
+}
+
+
+.contact-form input, .contact-form textarea {
+  border: 1px solid #666;
+  border-radius: .375rem;
+  height: 3rem;
+  width: 100%;
+  padding: 0.25rem 1rem;
+  box-shadow: 0 0 0 0px rgba(25 118 175 / .0);
+  position: relative;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+  border-color: rgb(25 118 175);
+  box-shadow: 0 0 0 3px rgba(25 118 175 / .2);
+  transition: box-shadow .3s ease-out;
+}
+
+.contact-form textarea{
+  resize: none;
+  height: 10rem;
+}
+
+.contact-form input[type="submit"] {
+  background-color: rgb(25 118 175);
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+.contact-form-container {
+  width: fit-content;
+  border-radius: .375rem;
+  padding: 2rem;
+  box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.219);
+}
+
+.contact-list ul {
+  padding: 0;
+}
+
+.contact-list li {
+  list-style-type: none;
+}
+
+.svg-icon {
+  color: rgb(25 118 175);
+}
